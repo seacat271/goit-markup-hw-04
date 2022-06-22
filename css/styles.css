@@ -125,9 +125,9 @@ color: var(--attention-color);
     justify-content: space-between;
 }
 
-.navigation-item + .navigation-item,
-.contact-item + .contact-item {
-    margin-left: 50px;
+.navigation-item:not(:last-child),
+.contact-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .navigation-item,
@@ -215,15 +215,18 @@ text-align: center;
     display: flex;
 }
 
-.principle-item + .principle-item {
-    margin-left: 30px;
+.principle-item:not(:last-child) {
+    margin-right: 30px;
 }
 
-.principle-icon {
-    padding: 25px 100px;
+.principle-icon-container {
+    height: 120px;
     margin-bottom: 30px;
     background-color: var(--second-background);
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .principle-title {
@@ -249,8 +252,8 @@ text-align: center;
     display: flex;
 }
 
-.specialization-item + .specialization-item {
-    margin-left: 30px;
+.specialization-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 /* styling section-staff */
@@ -263,8 +266,8 @@ text-align: center;
     display: flex;
 }
 
-.staff-item + .staff-item {
-    margin-left: 30px;
+.staff-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .staff-item {
@@ -326,16 +329,21 @@ text-align: center;
 }
 
 .client-link {
-    display: block;
+    width: 170px;
+    height: 92px;
+    display: flex;
     border-width: 1px;
     border-radius: 4px;
     color: var(--svg-color);
     border-color: var(--svg-color);
     border-style: solid;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.client-item + .client-item {
-    margin-left: 30px;
+.client-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .client-icon {
@@ -373,8 +381,8 @@ text-align: center;
     color: var(--basic-background);
 }
 
-.address-item + .address-item {
-    margin-top: 10px;
+.address-item:not(:last-child) {
+    margin-bottom: 10px;
 }
 
 .address-item>.link:hover,
@@ -395,8 +403,8 @@ text-align: center;
     display: flex;
 }
 
-.icon-item + .icon-item {
-    margin-left: 10px;
+.icon-item:not(:last-child) {
+    margin-right: 10px;
 }
 
 .footer>.container {
@@ -429,8 +437,8 @@ text-align: center;
     margin-bottom: 50px;
 }
 
-.button-item + .button-item {
-    margin-left: 8px;
+.button-item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .button-portfolio {
